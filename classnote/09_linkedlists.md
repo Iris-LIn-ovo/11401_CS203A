@@ -2,7 +2,7 @@
 
 ## Basic concepts
 - A  number of connected items or names written or printed consecutively, typically one below the other.  
-- ADT:
+- ADT :
     1. LinkedList Create() : 建立一個空的 linked list回傳空串列（head = NULL） 
     2. Boolean IsEmpty(L) : 判斷是否為空若沒有節點，回傳 true  
     3. Integer Length(L) : 回傳長度數節點總數  
@@ -43,6 +43,7 @@ Implementation Overhead Low  Moderate      Linked list requires pointer handling
 1. Singly linked list (basic form)（單向鏈結串列）
     * 無法回頭，只能往下一個走
     * 若要刪除尾端節點，必須從頭走到倒數第二個（O(n)）
+
 2. Doubly linked list (two-way navigation)（雙向鏈結串列）
     * 每個節點加上 prev
     * NULL <- [ prev | data | next ] <-> [ prev | data | next ] <-> [ prev | data | next ] -> NULL
@@ -53,11 +54,12 @@ Implementation Overhead Low  Moderate      Linked list requires pointer handling
         - 如有tail pointer ，可插入或刪除尾端點（O(1)）
     * 缺點：
         - 佔太多memory
-        - 操作複雜
+        - 操作複雜  
+
 3. Circular linked list (wrap-around structure)（環狀鏈結串列）
     * 最後一個不是指向NULL，而是指回開頭，形成一個「環」
-    * [1] -> [2] -> [3] -> [4] --+
-        ^                        |
+    * [1] -> [2] -> [3] -> [4] --+  
+        ^                        |  
         +------------------------+
     * 優點：
         - 可循環走訪，不必從頭
@@ -69,3 +71,10 @@ Implementation Overhead Low  Moderate      Linked list requires pointer handling
     *   Singly Circular Linked List → 最後節點的 next 指回 head  
 	    Doubly Circular Linked List → 同時有 prev 與 next，首尾相接
 
+## Trade-offs: Variations of Linked List
+1. traversal direction
+    - Singly linked list：只能往「下一個」走
+    - Doubly linked list：可雙向移動（前後）
+    - Circular linked list：能循環無限走訪
+2. insert/delete flexibility
+3. memory overhea
