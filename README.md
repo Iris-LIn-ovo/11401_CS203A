@@ -10,7 +10,6 @@ It focuses on understanding internal mechanisms, memory operations, and algorith
 - **Name:** Lin Yu-Hsin  
 - **Student ID:** s1133344  
 - **Course:** CS203A Data Structures  
-- **Instructor:** [Add your instructor’s name if needed]  
 - **Semester:** 114-1 (Fall 2025)
 
 ---
