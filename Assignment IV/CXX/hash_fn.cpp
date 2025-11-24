@@ -1,4 +1,5 @@
 #include "hash_fn.hpp"
+using namespace std;
 
 int hashInt(int key, int m) {
     if (m <= 0) return -1;
@@ -6,7 +7,7 @@ int hashInt(int key, int m) {
 }
 
 
-int hashString(const std::string &s, int m) {
+int hashString(const string &s, int m) {
     if (m <= 0) return -1;
 
     unsigned long long hash = 0;
