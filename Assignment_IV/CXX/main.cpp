@@ -22,7 +22,7 @@ int main() {
     for (int mi = 0; mi < num_m; mi++) {
         int m = m_values[mi];
         cout << "=== Integer Hash (m = " << m << ") ===\n";
-        cout << "Key\tIndex\n-------------------\n";
+        cout << "Key\tㄏIndex\n-------------------\n";
 
         for (int i = 0; i < num_int; i++) {
             int idx = hashInt(int_keys[i], m);
