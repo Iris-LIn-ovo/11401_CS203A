@@ -1,5 +1,57 @@
 # Assignment IV
 
+# Hash Function
+- 把輸入（key）轉成數字 index 的 Function  
+    把「任意資料」→「丟進一個算式」→「得到應該放到哪個抽屜（bucket）」  
+    例子
+    ```bash 
+    index = key % m
+    ```
+    我作業使用的
+    ```bash 
+    index = (31 * key + 7) % m
+    ```
+# 測試資料
+    - 整數 Key：21–30、51–60
+    - 字串 Key：cat, dog, bat, cow, ant, owl, bee, hen, pig, fox
+    - 測試 Table Size (m)：10、11、37
+    
+# 測試結果
+    1. 整數 Hash 分布  
+        * m = 10
+            ```bash 
+            Bucket 0: 23 53
+            Bucket 1: 24 54
+            Bucket 2: 25 55
+            Bucket 3: 26 56
+            Bucket 4: 27 57
+            Bucket 5: 28 58
+            Bucket 6: 29 59
+            Bucket 7: 30 60
+            Bucket 8: 21 51
+            Bucket 9: 22 52
+            ```
+        * m = 11
+            ```bash 
+            Bucket 0: 53
+            Bucket 1: 25 58
+            Bucket 2: 30 52
+            Bucket 3: 24 57
+            Bucket 4: 29 51
+            Bucket 5: 23 56
+            Bucket 6: 28
+            Bucket 7: 22 55
+            Bucket 8: 27 60
+            Bucket 9: 21 54
+            Bucket 10: 26 59
+            ```
+            
+```bash 
+```
+# 結果分析 
+    - 
+# Git Workflow
+
 ## CXX
 - hash_fn.hpp：宣告
     
@@ -38,7 +90,7 @@
     -I"/Users/linyuxin/Data Structures/Assignment_IV/CXX" \
     -o "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
     ```
-    
+
 - 查看結果
     ```bash 
     "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
