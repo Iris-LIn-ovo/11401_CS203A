@@ -26,8 +26,25 @@
         2. 整數溢位
             31 * key + 7 可能溢位（超過 int 的範圍）。對一般小鍵值通常沒問題，但若 key 很大（例如 10^9）或在極端情況下極可能溢位  
         gpt建議改善方法：建議用更大整數型別（如 long long / uint64_t）或在取模前就用模運算技巧（模乘法）避免溢位
+
 - main.cpp：主函式，用來呼叫另外兩個檔案
 編譯器把 main.cpp 與 hash_fn.cpp 弄成一個可執行檔
+
+- 執行程式：不可以直接按run，會只編譯 main.cpp 檔 -> linker 找不到 hashInt、hashString -> error，請輸入以下  
+    ```bash 
+    g++ -Wall -Wextra -g3 \
+    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/main.cpp" \
+    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/hash_fn.cpp" \
+    -I"/Users/linyuxin/Data Structures/Assignment_IV/CXX" \
+    -o "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
+    ```
+    
+- 查看結果
+    ```bash 
+    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
+    ```
+    ```bash 
+    ```
 
 ## Observations
 - m 為質數（11, 37）時分布較均勻、碰撞較少。
