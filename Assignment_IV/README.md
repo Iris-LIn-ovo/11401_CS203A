@@ -1,6 +1,6 @@
 # Assignment IV
 
-# Hash Function
+# Hash Function 
 - 把輸入（key）轉成數字 index 的 Function  
     把「任意資料」→「丟進一個算式」→「得到應該放到哪個抽屜（bucket）」  
     例子
@@ -15,42 +15,55 @@
     - 整數 Key：21–30、51–60
     - 字串 Key：cat, dog, bat, cow, ant, owl, bee, hen, pig, fox
     - 測試 Table Size (m)：10、11、37
-    
+
 # 測試結果
-    1. 整數 Hash 分布  
-        * m = 10
-            ```bash 
-            Bucket 0: 23 53
-            Bucket 1: 24 54
-            Bucket 2: 25 55
-            Bucket 3: 26 56
-            Bucket 4: 27 57
-            Bucket 5: 28 58
-            Bucket 6: 29 59
-            Bucket 7: 30 60
-            Bucket 8: 21 51
-            Bucket 9: 22 52
-            ```
-        * m = 11
-            ```bash 
-            Bucket 0: 53
-            Bucket 1: 25 58
-            Bucket 2: 30 52
-            Bucket 3: 24 57
-            Bucket 4: 29 51
-            Bucket 5: 23 56
-            Bucket 6: 28
-            Bucket 7: 22 55
-            Bucket 8: 27 60
-            Bucket 9: 21 54
-            Bucket 10: 26 59
-            ```
-            
+    1. 整數 Hash 分布        
+- m = 10
+    ```bash
+    Bucket 0: 23 53
+    Bucket 1: 24 54
+    Bucket 2: 25 55
+    Bucket 3: 26 56
+    Bucket 4: 27 57
+    Bucket 5: 28 58
+    Bucket 6: 29 59
+    Bucket 7: 30 60
+    Bucket 8: 21 51
+    Bucket 9: 22 52
+    ```
+- m = 11
+    ```bash
+    Bucket 0: 53
+    Bucket 1: 25 58
+    Bucket 2: 30 52
+    Bucket 3: 24 57
+    Bucket 4: 29 51
+    Bucket 5: 23 56
+    Bucket 6: 28
+    Bucket 7: 22 55
+    Bucket 8: 27 60
+    Bucket 9: 21 54
+    Bucket 10: 26 59
+    ```
+
 ```bash 
 ```
 # 結果分析 
     - 
 # Git Workflow
+
+## C
+- 執行程式：不可以直接按run，會只編譯 main.cpp 檔 -> linker 找不到 hashInt、hashString -> error，要先切換至正確的資料夾
+    ```bash 
+    cd "/Users/linyuxin/Data Structures/Assignment_IV/C"
+    ```
+
+- 查看結果
+    ```bash 
+    "./output/main"
+    ```
+    ```bash 
+    ```
 
 ## CXX
 - hash_fn.hpp：宣告
@@ -82,18 +95,14 @@
 - main.cpp：主函式，用來呼叫另外兩個檔案
 編譯器把 main.cpp 與 hash_fn.cpp 弄成一個可執行檔
 
-- 執行程式：不可以直接按run，會只編譯 main.cpp 檔 -> linker 找不到 hashInt、hashString -> error，請輸入以下  
+- 執行程式：不可以直接按run，會只編譯 main.cpp 檔 -> linker 找不到 hashInt、hashString -> error，要先切換至正確的資料夾
     ```bash 
-    g++ -Wall -Wextra -g3 \
-    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/main.cpp" \
-    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/hash_fn.cpp" \
-    -I"/Users/linyuxin/Data Structures/Assignment_IV/CXX" \
-    -o "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
+    cd "/Users/linyuxin/Data Structures/Assignment_IV/CXX"
     ```
 
 - 查看結果
     ```bash 
-    "/Users/linyuxin/Data Structures/Assignment_IV/CXX/output/main"
+    "./output/main"
     ```
     ```bash 
     ```
