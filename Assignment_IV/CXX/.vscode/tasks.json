@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C++17 Project",
+            "type": "shell",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++17",            // 使用 C++17
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "main.cpp",              // 一定要列出 main.cpp
+                "hash_fn.cpp",           // 一定要列出 hash_fn.cpp
+                "-o",
+                "output/main"            // 輸出到 output 資料夾
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/Assignment_IV/CXX" // 改成你的專案路徑
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}
