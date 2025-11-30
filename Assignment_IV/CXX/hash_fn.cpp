@@ -1,4 +1,3 @@
-
 /*
    ========================================
    hash_fn.cpp — implement your hash functions
