@@ -25,14 +25,14 @@ All basic operations run in **O(1)** time.
 ## 3. Visualization
 
 ### Queue (FIFO)
-Front Rear
-┌───┐ ┌───┐ ┌───┐
-│ A │ │ B │ │ C │ ← enqueue(D)
-├───┤ ├───┤ ├───┤
-└───┘ └───┘ └───┘
+Front Rear  
+┌───┐ ┌───┐ ┌───┐  
+│ A │ │ B │ │ C │ ← enqueue(D)  
+├───┤ ├───┤ ├───┤  
+└───┘ └───┘ └───┘  
 
-Enqueue order: A → B → C → D  
-Dequeue order: A → B → C → D
+Enqueue order: A → B → C → D    
+Dequeue order: A → B → C → D  
 
 ---
 
@@ -48,18 +48,18 @@ Dequeue order: A → B → C → D
 ## 5. Abstract Data Type (ADT): Queue
 
 ADT Queue is
-objects:
+objects:  
 A finite ordered list of elements
-functions:
-Create(max_size) → Queue
-IsEmpty(q) → Boolean
-IsFull(q) → Boolean
-Enqueue(q, item)
-Dequeue(q) → element
-Front(q) → element
-end Queue
-
----
+functions:  
+Create(max_size) → Queue  
+IsEmpty(q) → Boolean  
+IsFull(q) → Boolean  
+Enqueue(q, item)  
+Dequeue(q) → element  
+Front(q) → element  
+end Queue  
+  
+---  
 
 ## 6. Implementation
 
