@@ -18,25 +18,25 @@ A **Stack** is a **linear data structure** that follows the
 | isEmpty() | Check if stack is empty |
 | isFull() | Check if stack is full (array-based) |
 
-All basic operations run in **O(1)** time.
+All basic operations run in **O(1)** time.  
 
 ---
 
 ## 3. Visualization
 
 ### Stack (LIFO)
-Top
-┌───┐
-│ C │ ← pop()
-├───┤
-│ B │
-├───┤
-│ A │
-└───┘
-Bottom
+Top  
+┌───┐  
+│ C │ ← pop()  
+├───┤  
+│ B │  
+├───┤  
+│ A │  
+└───┘  
+Bottom  
 
-Push order: A → B → C  
-Pop order: C → B → A
+Push order: A → B → C    
+Pop order: C → B → A  
 
 ---
 
@@ -51,18 +51,18 @@ Pop order: C → B → A
 ## 5. Abstract Data Type (ADT): Stack
 
 ADT Stack is
-objects:
+objects:  
 A finite ordered list of elements
-functions:
-Create() → Stack
-IsEmpty(s) → Boolean
-IsFull(s) → Boolean
-Push(s, item)
-Pop(s) → element
-Top(s) → element
-end Stack
+functions:  
+Create() → Stack  
+IsEmpty(s) → Boolean  
+IsFull(s) → Boolean  
+Push(s, item)  
+Pop(s) → element  
+Top(s) → element  
+end Stack  
 
----
+---  
 
 ## 6. Implementation
 
